@@ -30,8 +30,8 @@ Bot de Telegram personal que escanea la red local con **nmap**, guarda los equip
 ## Instalación
 
 ```bash
-git clone <url-del-repositorio>
-cd <carpeta-del-proyecto>
+git clone https://github.com/gaabriiel2005/Netwatch-Telegram.git
+cd Netwatch-Telegram
 
 python -m venv venv
 # Linux / macOS
