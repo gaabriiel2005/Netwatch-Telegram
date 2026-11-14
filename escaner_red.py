@@ -1,7 +1,6 @@
 import nmap
 from datetime import datetime as timestamp
 from basedatos import database
-import asyncio
 from mac_vendor_lookup import AsyncMacLookup
 
 class Scanner:
@@ -19,7 +18,7 @@ class Scanner:
             return 'Fabricante desconocido'
         return fabricante_final
 
-    async def scaneo_equipos_vivos(self) :
+    async def scaneo_equipos_vivos(self) -> tuple:
         scan = nmap.PortScanner()
         ahora = timestamp.now().strftime("%Y-%m-%d %H:%M:%S")
         scan.scan(hosts=self.red,arguments='-sn -n -T4')

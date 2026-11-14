@@ -52,10 +52,10 @@ async def dbhosts(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         return
     conexion = database("database.db")
     datos = conexion.select("*","")
-    texto = "Indice | MAC | IP | Hostname | Fabricante | 1º con | ult con\n"
+    texto = "Indice | MAC | IP | Hostname | Fabricante | 1º con | ult con | Autorizado\n"
     texto += "-------------------------------------------------------------------------------------------\n"
     for i,filas in enumerate(datos):
-        texto += f"{i+1}. {filas[2]} | {filas[1]} | {filas[3]} | {filas[4]} | {filas[5]} | {filas[6]} \n\n"
+        texto += f"{i+1}. {filas[2]} | {filas[1]} | {filas[3]} | {filas[4]} | {filas[5]} | {filas[6]} | {bool(filas[7])}\n\n"
     await update.message.reply_text(str(texto))
 
 

@@ -2,13 +2,13 @@
 
 Bot de Telegram personal que escanea la red local con **nmap**, guarda los equipos detectados en una base de datos **SQLite** y permite consultarlos desde el móvil.
 
-> Proyecto en desarrollo. Pensado para uso personal sobre mi propia red doméstica.
+> Proyecto en desarrollo. Pensado para uso personal sobre una red local doméstica.
 
 ## Funcionalidades
 
 - Escaneo de la red local para listar los equipos conectados (IP y MAC).
 - Base de datos SQLite con los equipos conocidos (IP, MAC, hostname, fabricante, primera y última vez visto).
-- Bot de Telegram con teclado de comandos.
+- Bot de Telegram con comandos.
 - Acceso restringido a un único usuario (el administrador).
 
 ## Comandos del bot
@@ -73,17 +73,6 @@ Después abre el chat con tu bot en Telegram y envía `/start`.
 ├── requirements.txt    # Dependencias
 └── README.md
 ```
-
-## Hoja de ruta
-
-- [ ] Fabricante a partir de la MAC (`mac-vendor-lookup`)
-- [ ] Guardar los equipos escaneados en la base de datos
-- [ ] Marcar los equipos desconocidos como posibles intrusos
-- [ ] Escaneo periódico con aviso automático
-- [ ] Historial de conexiones
-- [ ] Wake-on-LAN (opcional)
-- [ ] Test de velocidad de internet (opcional)
-- [ ] Consumo de ancho de banda por equipo, vía router (opcional)
 
 ## Aviso
 
