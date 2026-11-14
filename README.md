@@ -13,11 +13,11 @@ Bot de Telegram personal que escanea la red local con **nmap**, guarda los equip
 
 ## Comandos del bot
 
-| Comando    | Descripción                                  |
-|------------|----------------------------------------------|
-| `/start`   | Inicia el bot y muestra el menú              |
-| `/ayuda`   | Muestra los comandos disponibles             |
-| `/scann`   | Escanea la red y lista los equipos activos   |
+| Comando    | Descripción                                       |
+|------------|---------------------------------------------------|
+| `/start`   | Inicia el bot y muestra el menú                   |
+| `/ayuda`   | Muestra los comandos disponibles                  |
+| `/scann`   | Escanea la red y lista los equipos activos        |
 | `/dbhosts` | Muestra los equipos guardados en la base de datos |
 
 ## Requisitos
@@ -58,7 +58,7 @@ El rango de red escaneado (`192.168.1.0/24`) está actualmente fijado en el cód
 ## Uso
 
 ```bash
-python messg_telegram.py
+python main.py
 ```
 
 Después abre el chat con tu bot en Telegram y envía `/start`.
@@ -67,7 +67,7 @@ Después abre el chat con tu bot en Telegram y envía `/start`.
 
 ```
 .
-├── messg_telegram.py   # Bot de Telegram y comandos
+├── main.py   # Bot de Telegram y comandos
 ├── escaner_red.py      # Escaneo de red con nmap
 ├── basedatos.py        # Acceso a la base de datos SQLite
 ├── requirements.txt    # Dependencias

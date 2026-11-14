@@ -43,7 +43,7 @@ async def scann(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         return
     
     escaner = Scanner("192.168.1.0/24")
-    equipos = escaner.texto_lista_equipos_vivos()
+    equipos = await escaner.texto_lista_equipos_vivos()
     await update.message.reply_text(equipos)
 
 async def dbhosts(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:

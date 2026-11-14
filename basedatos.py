@@ -36,13 +36,6 @@ class database:
             con.commit()
 
 def main():
-    # conexion = database("database.db")
-    # ahora = timestamp.now().strftime("%Y-%m-%d %H:%M:%S")
-    # conexion.insert("192.168.1.40/24","02:00:00:1A:2B:3F","PC 1","Microsoft",ahora,ahora)
-    # print(conexion.select("*"))
-    # print(conexion.equipo_existe("02:00:00:1A:2B:3C"))
-    # print(conexion.equipo_existe("02:00:00:1A:2B:4C"))
-    # conexion.actualizar_uvisto(ahora,"02:00:00:1A:2B:3C")
     pass
 
 if __name__ == '__main__':
