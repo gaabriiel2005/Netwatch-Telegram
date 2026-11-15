@@ -19,6 +19,7 @@ Bot de Telegram personal que escanea la red local con **nmap**, guarda los equip
 | `/ayuda`   | Muestra los comandos disponibles                  |
 | `/scann`   | Escanea la red y lista los equipos activos        |
 | `/dbhosts` | Muestra los equipos guardados en la base de datos |
+| `/cambiar_alias` | Cambia el alias de un equipo en la base de datos   |
 
 ## Requisitos
 
