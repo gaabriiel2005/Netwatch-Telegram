@@ -35,6 +35,16 @@ class database:
             cur.execute(f"UPDATE equipos SET ultimo_visto = '{uvisto}' WHERE mac = '{mac}'")
             con.commit()
 
+    def actualizar_alias(self,indice :str, alias : str):        
+        con,cur = self.conetar()
+        cur.execute(f"UPDATE equipos SET alias = ? WHERE id = ?",(alias,indice))        
+        con.commit()
+
+    def actulizar_autorizacion(self,indice : str, autorizacion : bool):
+        con,cur = self.conetar()
+        cur.execute(f"UPDATE equipos SET autorizado = ? WHERE mac = ?",(autorizacion,indice))
+        con.commit()
+
 def main():
     pass
 
